@@ -1,65 +1,82 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("F:/workspace/CucumberDemo/src/main/java/feature/Basic.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("F:/workspace/CucumberDemo/src/main/java/feature/DataTable.feature");
 formatter.feature({
   "line": 1,
-  "name": "Basic structure example of Cucmber.",
+  "name": "Data Table in Cucumber.",
   "description": "",
-  "id": "basic-structure-example-of-cucmber.",
+  "id": "data-table-in-cucumber.",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Basic of Cucumber",
+  "name": "Data table demo",
   "description": "",
-  "id": "basic-structure-example-of-cucmber.;basic-of-cucumber",
+  "id": "data-table-in-cucumber.;data-table-demo",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 4,
-  "name": "feature and scenario writen",
+  "name": "Feature file Step defination and runner are written",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "this is then step",
+  "name": "data uname and pwd are read from data table",
+  "rows": [
+    {
+      "cells": [
+        "abc",
+        "*********"
+      ],
+      "line": 6
+    }
+  ],
   "keyword": "Then "
-});
-formatter.step({
-  "line": 6,
-  "name": "this is and step",
-  "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "cucumber basic is completed",
+  "name": "data location is read from data table",
+  "rows": [
+    {
+      "cells": [
+        "United states of america"
+      ],
+      "line": 8
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 9,
+  "name": "execution is complete",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "BasicStepDefinition.feature_and_scenario_writen()"
+  "location": "DataTableStepDefination.a()"
 });
 formatter.result({
-  "duration": 524091148,
+  "duration": 776003192,
   "status": "passed"
 });
 formatter.match({
-  "location": "BasicStepDefinition.this_is_then_step()"
+  "location": "DataTableStepDefination.b(DataTable)"
 });
 formatter.result({
-  "duration": 219223,
+  "duration": 3696825,
   "status": "passed"
 });
 formatter.match({
-  "location": "BasicStepDefinition.this_is_and_step()"
+  "location": "DataTableStepDefination.c(DataTable)"
 });
 formatter.result({
-  "duration": 196644,
+  "duration": 274645,
   "status": "passed"
 });
 formatter.match({
-  "location": "BasicStepDefinition.cucumber_basic_is_completed()"
+  "location": "DataTableStepDefination.d()"
 });
 formatter.result({
-  "duration": 224150,
+  "duration": 207728,
   "status": "passed"
 });
 });
